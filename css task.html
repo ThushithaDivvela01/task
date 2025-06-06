@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.parent{
+  background-color: chartreuse;
+}
+.links{
+  list-style: none;
+  display: flex;
+}
+.item{
+  position: relative;
+}
+.links a {
+  color:white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+.content {
+  display: none;
+  position: absolute;
+  background-color: rgb(240, 240, 237);
+  border-radius: 5px;
+}
+.content a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+}
+.content a:hover {
+  background-color: chartreuse;
+}
+.item:hover .content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+  <ul class="links">
+    <li class="item">
+      <a href="#">COUNTRIES</a>
+      <div class="content">
+        <a href="#">india</a>
+        <a href="#">UK</a>
+        <a href="#">US</a>
+      </div>
+    </li>
+    <li class="item">
+      <a href="#">DISTRICTS</a>
+      <div class="content">
+        <a href="#">ntr</a>
+        <a href="#">krishna</a>
+        <a href="#">guntur</a>
+      </div>
+    </li>
+    <li class="item">
+      <a href="#">STATES</a>
+      <div class="content">
+        <a href="#">ap</a>
+        <a href="#">ts</a>
+        <a href="#">tn</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>
